@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+   
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product img {
+    width: 230px;
+    height: 300px;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+header {text-align: center;
+    padding: 20px;
+    background-color: #a826cf;
+}
+.container {
+    display: flex;
+  }
+  li{list-style: none;}
+  nav { 
+    flex: 1; /* занимает всю доступную ширину */
+    padding: 20px;
+    
+  }
+  main {
+    flex: 4; /* занимает удвоенную ширину по сравнению с другими блоками */
+    padding: 20px;
+    
+  }
+  aside {
+    flex: 1; /* занимает половину ширины */
+    padding: 20px;
+   
+  }
+  .ads {
+    padding: 20px;
+     background-color: rgb(217, 226, 43);
+     border-radius: 8px;
+     margin-top: 20px;
+
+  }
+  footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #a826cf;
+  }
+  section {
+    padding: 20px;
+     background-color: blueviolet;
+     border-radius: 8px;
+  }
+  article {
+    padding: 25px;
+  
+  }
+  .contain {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-left: 15px;
+     }
+   .block {
+   width: 100px;
+   height: 100px;
+   margin-right: 20px;
+   }
+.size-chart {
+    display: none;
+    margin-top: 20px;
+}
+@media  (max-width: 768px) {
+    .container {
+      flex-direction: column; /* меняем направление flex на вертикальное */
+    }
+     header, main, nav, aside, footer {
+      width: 100%;
+    }
+  }
+ 
+

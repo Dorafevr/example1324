@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="image/iva.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Магазин одежды "Ива"</title>
+<style>
+  header {text-align: center;
+          padding: 20px;
+          background-color: #a826cf;
+ }
+ .container {
+          display: flex;
+        }
+nav { 
+          flex: 1; /* занимает всю доступную ширину */
+          padding: 20px;
+  }
+main {
+          flex: 4; /* занимает удвоенную ширину по сравнению с другими блоками */
+          padding: 20px;
+          
+        }
+aside {
+          flex: 1; /* занимает половину ширины */
+          padding: 20px;
+         
+        }
+.ads {
+          padding: 20px;
+           background-color: rgb(217, 226, 43);
+           border-radius: 8px;
+           margin-top: 20px;
+        }
+footer {
+          padding: 20px;
+          text-align: center;
+          background-color: #a826cf;
+        }
+        .foter1{
+            margin-left: 40px;
+        }
+ section {
+          padding: 20px;
+           background-color: blueviolet;
+           border-radius: 8px;
+        }
+article {
+          padding: 25px;
+        
+        }
+@media  (max-width: 768px) {
+          .container {
+            flex-direction: column; /* меняем направление flex на вертикальное */
+          }
+header, main, nav, aside, footer {
+            width: 100%;
+          }
+        }
+ .contain {
+       display: flex;
+       justify-content: space-between;
+       margin-top: 100px;
+       margin-left: 15px;
+        }
+.block {
+      width: 100px;
+      height: 100px;
+      margin-right: 20px;
+      }
+body {
+ font-family: Arial, sans-serif;
+ background-color: #f9f9f9;
+  
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+    gap: 20px; /* Расстояние между товарами */
+    padding-bottom: 10px;
+}
+
+.product {
+    width: 200px; /* Ширина одного товара */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+     
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: 67%;
+     display: block;
+}
+
+.details {
+    padding: 15px;
+}
+
+.price {
+    font-size: 16px;
+    color: #333;
+}
+
+.buy-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #0056b3;
+}
+.hr {
+    display: block;
+    width: 90%;
+   margin: 10px;
+ 
+    padding: 10px ;
+    border: 1px solid #000;  
+    background-color: #eeff00;  
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+
+}
+.hr:hover{
+    background-color: #d8b908;
+}
+ 
+.hr:active{
+    background-color:red;
+}
+</style>
+<script>
+    alert("Добро пожаловать в наш магазин!" );
+</script>
+</HEAD>
+ <body>  
+    <a  style="float: right; display: block; border: 1px solid #000;   text-decoration: none;
+    background-color: #eeff00; border-radius: 10px; padding: 1px; margin: 5px;"   href="intrarea.html" target="_blank">Войти</a>
+  <header>
+<h1>"Ива"-магазин вашей мечты!</h1>
+  </header>
+<div class="container">
+    <nav> 
+    <h2>Категории</h2>
+  
+        <div > <a href="#newcollection" class="hr" >Новая коллекция</a> </div>
+       <div> <a href="#blouses" class="hr">Блузки</a></div>
+        <div><a href="#tops" class="hr">Топы и Футболки</a></div> 
+        
+        <div><a href="#skirts" class="hr">Юбки</a></div>
+        <div><a href="#pants" class="hr">Брюки</a> </div>
+          <div> <a href="#dresses" class="hr">Платья</a> </div> 
+          <div><a href="#lingerie" class="hr">Нижнее белье</a></div>
+    </nav>
+<main>
+<section id="newcollection">
+ <h2>Новая коллекция</h2>
+</section>
+<article>
+<div class="products-container">
+<div class="product">
+<img src="image/blouse4.png" alt="Изображение  ">
+<div class="details">
+    <p class="price">Блузка "Цирцила"</p>
+<p class="price">Цена: $10</p>
+
+<a href="brouse4.html" class="buy-btn">Купить</a>
+ </div>
+ </div>
+  <div class="product">
+  <img src="image/dress3.png" alt="Изображение ">
+   <div class="details">
+    <p class="price">Платье "Цирцила"</p>
+   <p class="price">Цена: $10</p>
+    <a href="dress3.html" class="buy-btn">Купить</a>
+ </div>
+ </div>
+ <div class="product">
+   <img src="image/skirt3.png " alt="Изображение ">
+   <div class="details">
+    <p class="price">Юбка "Цирцила"</p>
+    <p class="price">Цена: $10</p>
+    <a href="skirt3.html" class="buy-btn">Купить</a>
+  </div>
+  </div>
+   </div></article>
+   <section id="blouses">
+    <h2>Блузки</h2>
+  </section>
+  <article>
+    <div class="products-container">
+    <div class="product">
+    <img src=" image/blouse1.png" alt="Изображение  ">
+    <div class="details">   
+    <p class="price">Цена: $16</p>
+    <a href="blouse1.html" class="buy-btn">Купить</a>
+     </div>
+     </div>
+
+      <div class="product">
+      <img src="image/blouse2.png" alt="Изображение ">
+       <div class="details">
+       <p class="price">Цена: $12</p>
+        <a href="blouse2.html" class="buy-btn">Купить</a>
+     </div>
+     </div>
+     <div class="product">
+       <img src="image/blouse3.png " alt="Изображение ">
+       <div class="details">
+        
+        <p class="price">Цена: $13</p>
+        <a href="blouse3.html" class="buy-btn">Купить</a>
+      </div>
+      </div>
+      <div class="product">
+        <img src="image/blouse4.png" alt="Изображение ">
+        <div class="details">
+            
+         <p class="price">Цена: $13</p>
+         <a href="brouse4.htmll" class="buy-btn">Купить</a>
+       </div>
+       </div>
+        
+       </div></article>
+       <section id="tops">
+        <h2>Футболки и топы</h2>
+      </section>
+      <article>
+        <div class="products-container">
+        <div class="product">
+        <img src=" image/top1.png" alt="Изображение  ">
+        <div class="details">
+        <p class="price">Цена: $16</p>
+        <a href="top1.html" class="buy-btn">Купить</a>
+         </div>
+         </div>
+          <div class="product">
+          <img src="image/top2.png" alt="Изображение ">
+           <div class="details">
+           <p class="price">Цена: $12</p>
+            <a href="top2.html" class="buy-btn">Купить</a>
+         </div>
+         </div>
+         <div class="product">
+           <img src="image/top3.png" alt="Изображение ">
+           <div class="details">
+            <p class="price">Цена: $13</p>
+            <a href="top3.html" class="buy-btn">Купить</a>
+          </div>
+          </div>
+          <div class="product">
+            <img src="image/top4.png" alt="Изображение ">
+            <div class="details">
+             <p class="price">Цена: $13</p>
+             <a href="top4.html" class="buy-btn">Купить</a>
+           </div>
+           </div>
+            
+           </div></article>
+  <section id="pants">
+    <h2>Брюки</h2>
+  </section>
+  <article>
+    <div class="products-container">
+    <div class="product">
+    <img src=" image/bruki1.png" alt="Изображение  ">
+    <div class="details">
+    <p class="price">Цена: $16</p>
+    <a href="bruki1.html" class="buy-btn">Купить</a>
+     </div>
+     </div>
+      <div class="product">
+      <img src="image/bruki2.png" alt="Изображение ">
+       <div class="details">
+       <p class="price">Цена: $12</p>
+        <a href="bruki2.html" class="buy-btn">Купить</a>
+     </div>
+     </div>
+     <div class="product">
+       <img src="image/bruki3.png " alt="Изображение ">
+       <div class="details">
+        <p class="price">Цена: $13</p>
+        <a href="bruki3.html" class="buy-btn">Купить</a>
+      </div>
+      </div> 
+       </div></article>
+       <section id="skirts">
+        <h2>Юбки</h2>
+      </section>
+      <article>
+        <div class="products-container">
+        <div class="product">
+        <img src=" image/skirt1.png" alt="Изображение  ">
+        <div class="details">
+        <p class="price">Цена: $16</p>
+        <a href="skirt1.html" class="buy-btn">Купить</a>
+         </div>
+         </div>
+          <div class="product">
+          <img src="image/skirt2.png" alt="Изображение ">
+           <div class="details">
+           <p class="price">Цена: $12</p>
+            <a href="skirt2.html" class="buy-btn">Купить</a>
+         </div>
+         </div>
+         <div class="product">
+           <img src="image/skirt3.png" alt="Изображение ">
+           <div class="details">
+            <p class="price">Цена: $13</p>
+            <a href="skirt3.html" class="buy-btn">Купить</a>
+          </div>
+          </div>
+          <div class="product">
+            <img src="image/skirt4.png" alt="Изображение ">
+            <div class="details">
+             <p class="price">Цена: $13</p>
+             <a href="bskirt4.html" class="buy-btn">Купить</a>
+           </div>
+           </div>
+           <div class="product">
+            <img src="image/skirt5.png" alt="Изображение ">
+            <div class="details">
+             <p class="price">Цена: $13</p>
+             <a href="skirt5.html" class="buy-btn">Купить</a>
+           </div>
+           </div> 
+           </div></article>
+  <section id="dresses">
+    <h2>Платья</h2>
+  </section>
+  <article>
+    <div class="products-container">
+    <div class="product">
+    <img src="image/dress1.png" alt="Изображение  ">
+    <div class="details">
+    <p class="price">Цена: $16</p>
+    <a href="dress1.html" class="buy-btn">Купить</a>
+     </div>
+     </div>
+      <div class="product">
+      <img src="image/dress3.png" alt="Изображение ">
+       <div class="details">
+       <p class="price">Цена: $12</p>
+        <a href="dress3.html" class="buy-btn">Купить</a>
+     </div>
+     </div>
+     <div class="product">
+       <img src="image/dress2.png " alt="Изображение ">
+       <div class="details">
+        <p class="price">Цена: $13</p>
+        <a href="dress2.html" class="buy-btn">Купить</a>
+      </div>
+      </div>
+      <div class="product">
+        <img src="image/dress5.png " alt="Изображение ">
+        <div class="details">
+         <p class="price">Цена: $13</p>
+         <a href="dress5.html" class="buy-btn">Купить</a>
+       </div>
+       </div>
+       <div class="product">
+        <img src="image/dress4.png" alt="Изображение ">
+        <div class="details">
+         <p class="price">Цена: $14</p>
+         <a href="dress4.html" class="buy-btn">Купить</a>
+       </div>
+       </div>
+       </div></article>
+       <section id="lingerie">
+  <h2>Нижнее белье</h2>
+              </section>
+              <article>
+                <div class="products-container">
+                <div class="product">
+                <img src=" image/bra1.png" alt="Изображение  ">
+                <div class="details">
+                <p class="price">Цена: $16</p>
+                <a href="bra1.html" class="buy-btn">Купить</a>
+                 </div>
+                 </div>
+                  <div class="product">
+                  <img src="image/bra2.png" alt="Изображение ">
+                   <div class="details">
+                   <p class="price">Цена: $12</p>
+                    <a href="bra2.html" class="buy-btn">Купить</a>
+                 </div>
+                 </div>
+                 <div class="product">
+                   <img src="image/bra3.png" alt="Изображение ">
+                   <div class="details">
+                    <p class="price">Цена: $13</p>
+                    <a href="bra3.html" class="buy-btn">Купить</a>
+                  </div>
+                  </div>
+                
+  </div></article>
+  
+  <section>                 
+<h2 align="center">Видео нашей коллекций:</h2>
+  </section><article>
+ <iframe width="100%" height="315" src="https://www.youtube.com/embed/vmzFsExgPbU" frameborder="0" allowfullscreen></iframe>
+</article>
+ <section id="local">
+ <h2>Место положение:</h2></section><article>
+ <iframe  style=" width:100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d680.0265052900317!2d28.823502219843775!3d47.01852389999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c2c542c6ab9%3A0xfc5dce0e198b4a03!2zQmxvY2sgNCwgU3RyYWRhIFB1yJlraW4sIENoaciZaW7Eg3UsINCc0L7Qu9C00L7QstCw!5e0!3m2!1sru!2s!4v1707596572021!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </article>
+</main>
+ <aside>
+ <h3>Ads</h3><div class="transition"></div>
+ <div class="ads">Реклама</div>
+ <div class="ads">Реклама</div>
+ <div class="ads">Реклама</div>
+ <div class="ads">Реклама</div>
+ <div class="ads">Реклама</div>
+ </aside>
+</div>
+<footer>
+    <h2>О нас</h2>
+   <a href="contact.html" class="foter1">Контакты</a>
+  <a href="#local" class="foter1">Наша локация</a> 
+ <a href="levrarea.html" class="foter1">Доставка</a>
+ <a href="news.html" class="foter1">Новости</a> 
+     </footer>
+
+       
+</body>
+</html>

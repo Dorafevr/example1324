@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="shortcut icon" href="image/iva.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блузка Цирцея</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключение внешних стилей -->
+</head>
+<body>
+    <header>
+        <h1>"Ива"-магазин вашей мечты!</h1>
+          </header>
+ <div class="container">
+      
+   <main> <div class="product">
+    <img src="image/blouse4.png" alt="Изображение товара">
+    <div class="details">
+        <h2>Блузка Цирцея</h2>
+        <p>Описание:Синяя блузка без рукавов с узорами - это стильная и женственная одежда, идеально подходящая для летнего сезона или теплой погоды. Этот наряд сочетает в себе элегантность и комфорт, прекрасно подходящий как для повседневного использования, так и для особых случаев.</p>
+        <p class="price">Цена: $19.99</p> <!-- Добавляем класс "price" для цены -->
+        
+        <!-- Выпадающий список с размерами -->
+        <select id="size-select">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+        </select>
+        
+        <button onclick="buyProduct()">Купить</button>
+    </div>
+       </div>
+ 
+    <h3>Таблица размеров</h3>
+    <table border="1px">
+        <tr>
+            <th>Размер</th>
+            <th>Обхват груди (см)</th>
+            <th>Обхват талии (см)</th>
+            <th>Обхват бедер (см)</th>
+        </tr>
+        <tr>
+            <td>S</td>
+            <td>80-85</td>
+            <td>60-65</td>
+            <td>85-90</td>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td>86-91</td>
+            <td>66-71</td>
+            <td>91-96</td>
+        </tr>
+        <tr>
+            <td>L</td>
+            <td>92-97</td>
+            <td>72-77</td>
+            <td>97-102</td>
+        </tr>
+    </table>
+ </main>
+   <aside>
+    <div class="ads">Реклама</div>
+    <div class="ads">Реклама</div>
+    <div class="ads">Реклама</div>
+    <div class="ads">Реклама</div>
+    <div class="ads">Реклама</div> 
+   </aside>
+</div>
+<footer><h2> О нас</h2>
+    <a href="" class="foter1">Контакты</a>
+    <a href="" class="foter1">Наша локация</a> 
+   <a href="" class="foter1">Доставка</a>
+   <a href="" class="foter1">Новости</a> 
+</footer>
+<script src="script.js"></script> <!-- Подключение скрипта -->
+</body>
+</html>
